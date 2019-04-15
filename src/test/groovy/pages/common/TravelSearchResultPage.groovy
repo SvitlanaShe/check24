@@ -16,7 +16,6 @@ class TravelSearchResultPage extends BasePage {
     }
 
     static at = {
-        waitForTimeInMillisecinds(1000)
         waitFor(driver.getCurrentUrl().toLowerCase().contains(url))
         searchResultsTitle.toUpperCase().contains(FORM_TITLE)
     }
